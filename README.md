@@ -11,5 +11,5 @@
 Install the CLI globally from GitHub:
 
 ```bash
-npm install -g github:JefersonHernandez/laughing-guacamole
+npm install -g laughing-guacamole
 ```
