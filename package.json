@@ -1,0 +1,36 @@
+{
+    "name": "@jefersonhernandez/laughing-guacamole",
+    "version": "1.0.0",
+    "description": "A starter CLI to execute tasks in Expo apps",
+    "author": "Jeferson Hernandez <jefersonuriel.hernandez@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JefersonHernandez/laughing-guacamole.git"
+    },
+    "homepage": "https://github.com/JefersonHernandez/laughing-guacamole",
+    "keywords": [
+        "cli",
+        "expo",
+        "export",
+        "automation"
+    ],
+    "bin": {
+        "laughing-guacamole": "./dist/cli.js"
+    },
+    "scripts": {
+        "build": "esbuild bin/laughing-guacamole.js --bundle --platform=node --outfile=dist/cli.js --target=node18 --format=cjs --minify",
+        "start": "node ./bin/laughing-guacamole.js"
+    },
+    "dependencies": {
+        "@inquirer/prompts": "^7.8.4",
+        "commander": "^14.0.0",
+        "fs-extra": "^11.3.1"
+    },
+    "devDependencies": {
+        "esbuild": "^0.25.9"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    }
+}
